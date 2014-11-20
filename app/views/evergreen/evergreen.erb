@@ -1,0 +1,80 @@
+<form name="input" action"/evergreen" method="post">
+
+	<div id="form1" class="panel-body">
+		<input id="form_array" type="hidden"  value="">
+		<input type="submit" class="submit find" value="SEARCH!">
+	</div>
+
+	<div id="form2">
+
+		<select name="shape" class="select"> 
+			
+			<option value="">How many sides do the needles have?</option>
+			<% @evergreen.each do |e| %>
+			<option class="<%=e.shape%>" value="<%= e.shape%>"><%= e.shape %></option>
+			<%end%>
+		</select></br></br>
+
+		<select name="bundle" class="select"> 
+			<option value="">How many needles per single stalk</option>
+			<% @evergreen.each do |e| %>
+			<option value="<%= e.bundle%>"><%= e.bundle %></option>
+			<%end%>
+		</select></br></br>
+
+		<select name="conesize" class="select"> 
+			<option value="">About how big is the cone?</option>
+			<% @evergreen.each do |e| %>
+			<option value="<%= e.conesize%>"><%= e.conesize %></option>
+			<%end%>
+		</select></br></br>
+
+		<select name="coneshape" class="select"> 
+			<option value="">What is the shape of the cone?</option>
+			<% @evergreen.each do |e| %>
+			<option value="<%= e.coneshape%>"><%= e.coneshape %></option>
+			<%end%>
+		</select></br></br>
+
+		<select name="dimensions" class="select"> 
+			<option value="">How big is the tree?</option>
+			<% @evergreen.each do |e| %>
+			<option value="<%= e.dimensions%>"><%= e.dimensions %></option>
+			<%end%>
+		</select></br></br>
+
+		<select name="elevation" class="select"> 
+			<option value="">How high were you when you found this tree?</option>
+			<% @evergreen.each do |e| %>
+			<option value="<%= e.elevation%>"><%= e.elevation %></option>
+			<%end%>
+		</select></br></br>
+
+		<select name="region" class="select"> 
+			<option value="">Which area did you find this tree in</option>
+			<% @evergreen.each do |e| %>
+			<option value="<%= e.region%>"><%= e.region %></option>
+			<%end%>
+		</select></br></br>
+
+		<select name="stalk" class="select"> 
+			<option value="">Does it have a stalk?</option>
+			<% @evergreen.each do |e| %>
+			<option value="<%= e.stalk%>"><%= e.stalk %></option>
+			<%end%>
+		</select></br></br>
+
+
+
+
+		
+
+	</div>
+	
+	
+	
+
+	
+	
+</form>
+

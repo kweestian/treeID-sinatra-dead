@@ -1,0 +1,115 @@
+/*body {
+	background: url(http://assets.worldwildlife.org/photos/946/images/carousel_small/forests-why-matter_63516847.jpg?1345534028);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+
+}
+*/
+.titlepage {
+	color: #F7F2F2;
+	font-size: 50px
+	}
+
+.question {
+	color: #F7F2F2;
+	font-size: 20px;
+	margin-left: 463px;
+	margin-top: 200px;
+	position: relative;
+	}
+
+a#leafy:hover:after {
+	color: #333333;
+}
+
+.homediv {
+	margin-top: 75px;
+	margin-left: 400px;
+	position: relative;
+	z-index: 3;
+}
+
+#img1 {
+	height: 100px;
+	width: 100px;
+	margin-top: 60px;
+	margin-left: 809px;
+	position: absolute;
+	border-radius: 20%;
+	display: none;
+}
+
+#img2 {
+	height: 100px;
+	width: 100px;
+	margin-top: 60px;
+	margin-left: 568px;
+	position: absolute;
+	border-radius: 20%;
+	display: none;
+}
+
+#form1 {
+	background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	margin-left: 600px;
+	margin-top: 100px;
+	position:absolute;
+	width: 440px;
+	height: 471px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 24px;
+	font-weight: bold;
+	color: #09C;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+#form2 {
+	background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	margin-left: 100px;
+	margin-top: 100px;
+	position:absolute;
+	width: 440px;
+	height: 471px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 24px;
+	font-weight: bold;
+	color: #09C;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+#input1 {
+	width:25px;
+	display:block;
+	height: 25px;
+	background-color: white;
+}
+
+.4D {
+	color: pink;
+}

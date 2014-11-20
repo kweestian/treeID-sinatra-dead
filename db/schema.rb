@@ -10,11 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140321144528) do
+ActiveRecord::Schema.define(version: 20141101005112) do
 
-  create_table "users", force: true do |t|
+  create_table "evergreens", force: true do |t|
+    t.string  "name"
+    t.string  "shape"
+    t.string  "bundle"
+    t.string  "conesize"
+    t.string  "coneshape"
+    t.string  "dimensions"
+    t.string  "elevation"
+    t.string  "region"
+    t.boolean "stalk"
+    t.text    "description"
+  end
+
+  create_table "leafies", force: true do |t|
     t.string "name"
-    t.string "email"
+    t.string "pattern"
+    t.string "fruit"
+    t.string "shape"
+    t.string "region"
+    t.string "elevation"
+    t.text   "description"
   end
 
 end
