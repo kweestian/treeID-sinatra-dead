@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 	x = new Array();
 
-	  $( ".select").change(function() {
+	  $( "#select").change(function() {
 	    //add name of search item in to "search area"
 	    var val = $(this).val()
 		    if (x.indexOf(val) == -1)

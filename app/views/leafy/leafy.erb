@@ -1,4 +1,4 @@
-<form name="input" action"/evergreen" method="post">
+<form class="form-horizontal" name="input" action"/evergreen" method="post">
 
 	<div id="form1" class="panel-body">
 		<input id="form_array" type="hidden"  value="">
@@ -7,18 +7,19 @@
 
 	<div id="form2">
 
-		<select name="pattern" class="select"> 
+
+		<select name="pattern" class="col-md-4 control-label" id="select"> 
 			
 			<option value="">What is the pattern of the outer leaf?</option>
 			<% @leafy.each do |e| %>
-			<option class="<%=e.pattern%>" value="<%= e.pattern%>"><%= e.fruit %></option>
+			<option class="<%= e.pattern %>" value="<%= e.pattern %>"><%= e.fruit %></option>
 			<%end%>
 		</select></br></br>
 
 		<select name="fruit" class="select"> 
 			
 			<option value="">What kind of fruit is it?</option>
-			<% @evergreen.each do |e| %>
+			<% @leafy.each do |e| %>
 			<option class="<%=e.fruit%>" value="<%= e.fruit%>"><%= e.fruit %></option>
 			<%end%>
 		</select></br></br>
@@ -26,7 +27,7 @@
 		<select name="shape" class="select"> 
 			
 			<option value="">What is the general shape of the leaf</option>
-			<% @evergreen.each do |e| %>
+			<% @leafy.each do |e| %>
 			<option class="<%=e.shape%>" value="<%= e.shape%>"><%= e.shape %></option>
 			<%end%>
 		</select></br></br>
@@ -34,7 +35,7 @@
 		<select name="region" class="select"> 
 			
 			<option value="">Where did you find this tree?</option>
-			<% @evergreen.each do |e| %>
+			<% @leafy.each do |e| %>
 			<option class="<%=e.region%>" value="<%= e.region%>"><%= e.region %></option>
 			<%end%>
 		</select></br></br>
@@ -42,7 +43,7 @@
 		<select name="elevation" class="select"> 
 			
 			<option value="">How high were you when you found this tree?</option>
-			<% @evergreen.each do |e| %>
+			<% @leafy.each do |e| %>
 			<option class="<%=e.elevation%>" value="<%= e.elevation%>"><%= e.elevation %></option>
 			<%end%>
 		</select></br></br>
