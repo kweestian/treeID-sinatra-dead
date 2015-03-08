@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141101005112) do
+ActiveRecord::Schema.define(version: 20141202195148) do
+
+  create_table "events", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "tree_id"
+    t.integer  "longitude"
+    t.integer  "latitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "evergreens", force: true do |t|
     t.string  "name"
@@ -33,6 +42,14 @@ ActiveRecord::Schema.define(version: 20141101005112) do
     t.string "region"
     t.string "elevation"
     t.text   "description"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "username"
+    t.string   "password"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
