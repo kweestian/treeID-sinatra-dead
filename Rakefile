@@ -1,9 +1,15 @@
 require 'rake'
-require "sinatra/activerecord/rake"
+require 'sinatra/activerecord/rake'
 require ::File.expand_path('../config/environment', __FILE__)
+require 'sinatra/asset_pipeline/task'
+require './app/'
 
 Rake::Task["db:create"].clear
 Rake::Task["db:drop"].clear
+
+
+# Sets Asset pipeline task
+Sinatra::AssetPipeline::Task.define! App
 
 # NOTE: Assumes SQLite3 DB
 desc "create the database"
