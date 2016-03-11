@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -12,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20141202195148) do
 
-  create_table "events", force: true do |t|
+  create_table "events", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "tree_id"
     t.integer  "longitude"
@@ -21,7 +22,7 @@ ActiveRecord::Schema.define(version: 20141202195148) do
     t.datetime "updated_at"
   end
 
-  create_table "evergreens", force: true do |t|
+  create_table "evergreens", force: :cascade do |t|
     t.string  "name"
     t.string  "shape"
     t.string  "bundle"
@@ -34,7 +35,7 @@ ActiveRecord::Schema.define(version: 20141202195148) do
     t.text    "description"
   end
 
-  create_table "leafies", force: true do |t|
+  create_table "leafies", force: :cascade do |t|
     t.string "name"
     t.string "pattern"
     t.string "fruit"
@@ -44,7 +45,7 @@ ActiveRecord::Schema.define(version: 20141202195148) do
     t.text   "description"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "username"
     t.string   "password"
     t.string   "email"
