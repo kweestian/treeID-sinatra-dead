@@ -1,4 +1,4 @@
-configure do
+configure :development do
   # Log queries to STDOUT in development
   if Sinatra::Application.development?
     ActiveRecord::Base.logger = Logger.new(STDOUT)
@@ -16,4 +16,17 @@ configure do
     autoload ActiveSupport::Inflector.camelize(filename), model_file
   end
 
+end
+
+configure :production do
+ db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///localhost/mydb')
+
+ ActiveRecord::Base.establish_connection(
+   :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
+   :host     => db.host,
+   :username => db.user,
+   :password => db.password,
+   :database => db.path[1..-1],
+   :encoding => 'utf8'
+ )
 end
