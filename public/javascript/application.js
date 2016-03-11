@@ -22,7 +22,11 @@ $(document).ready(function(){
 
 	x = new Array();
 
+<<<<<<< HEAD
 	  $(".select").change(function() {
+=======
+	  $( "#select").change(function() {
+>>>>>>> f6b2ef0a298b11b55e80591f8726cf6f95febc96
 	    //add name of search item in to "search area"
 	    var val = $(this).val()
 		    if (x.indexOf(val) == -1)

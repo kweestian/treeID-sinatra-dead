@@ -10,10 +10,17 @@
 */
 body {
 	margin: 0;
+<<<<<<< HEAD
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-opacity: 0.4;
 	margin-bottom: 0px;
+=======
+	background: url('http://ecotechagroltd.com/images/tree1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-opacity: 0.4;
+>>>>>>> f6b2ef0a298b11b55e80591f8726cf6f95febc96
 }
 
 #img {
