@@ -10,11 +10,11 @@
 */
 body {
 	margin: 0;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-opacity: 0.4;
 	margin-bottom: 0px;
-	background: url('http://ecotechagroltd.com/images/tree1.jpg');
+}
+
+#header {
+	background: url('/img/tree-snow.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-opacity: 0.4;
@@ -130,5 +130,5 @@ a#leafy:hover:after {
 }
 
 .mainImage {
-	
+
 }
