@@ -16,17 +16,12 @@ $(document).ready(function(){
 		$parent.remove();
 
 		x.splice(x.indexOf(val),1);
-	});	
+	});
 
 
 
 	x = new Array();
-
-<<<<<<< HEAD
 	  $(".select").change(function() {
-=======
-	  $( "#select").change(function() {
->>>>>>> f6b2ef0a298b11b55e80591f8726cf6f95febc96
 	    //add name of search item in to "search area"
 	    var val = $(this).val()
 		    if (x.indexOf(val) == -1)
@@ -34,8 +29,8 @@ $(document).ready(function(){
 		      x.push(val);
 		      $("#form_array")[0].value = x;
 		      $(".panel-body").append("<p class=\"checked\" name=\"search\" data-value="+val+">"+val+" <a href=\"\" style=\"color:red;\" class=\"delete\">x</a></p>");
-		    	
-	
+
+
 
 		    }
 		    else{
@@ -59,10 +54,10 @@ $(document).ready(function(){
 
 	    // Ensure chaining works
 	    return this.each(function(i, el) {
-	    
+
 	      $el = $(el).attr("data-tooltip", i);
 
-	      // Make DIV and append to page 
+	      // Make DIV and append to page
 	      var $tooltip = $('<div class="tooltip" data-tooltip="' + i + '">' + $el.attr('title') + '<div class="arrow"></div></div>').appendTo("body");
 
 	      // Position right away, so first appearance is smooth
@@ -84,7 +79,7 @@ $(document).ready(function(){
 
 	        $tooltip = $('div[data-tooltip=' + $el.data('tooltip') + ']');
 
-	        // Reposition tooltip, in case of page movement e.g. screen resize                        
+	        // Reposition tooltip, in case of page movement e.g. screen resize
 	        var linkPosition = $el.position();
 
 	        $tooltip.css({
