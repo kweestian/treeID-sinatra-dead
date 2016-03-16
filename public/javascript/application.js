@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-	$('#header').foggy();
-
 	$('#form1').on('click', '.delete', function(e){
 	 	e.preventDefault();
 

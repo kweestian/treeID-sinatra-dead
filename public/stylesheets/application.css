@@ -11,22 +11,19 @@
 body {
 	margin: 0;
 	margin-bottom: 0px;
-}
-
-#header {
-	background: url('/img/tree-snow.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-opacity: 0.4;
+	background: url("/img/tree-snow-background.jpg") no-repeat fixed;
+  background-position: 50%;
+  background-size: cover;
 }
 
 #img {
     background-image: 100% ;
 }
+
 .titlepage {
 	color: #F7F2F2;
 	font-size: 50px
-	}
+}
 
 .question {
 	color: #F7F2F2;
@@ -34,7 +31,7 @@ body {
 	margin-left: 463px;
 	margin-top: 200px;
 	position: relative;
-	}
+}
 
 a#leafy:hover:after {
 	color: #333333;
@@ -129,6 +126,7 @@ a#leafy:hover:after {
 	color: pink;
 }
 
-.mainImage {
-
+.header__entry-logo {
+	margin: 5px;
+	border-radius: 50%;
 }

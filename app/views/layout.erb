@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="fonts/bootstrap/glyphicons-halflings-regular.ttf">
   <link rel="stylesheet" href="fonts/bootstrap/glyphicons-halflings-regular.woff">
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="javascript/jquery-1.11.0.min.js"></script>
   <script src="javascript/bootstrap.min.js"></script>
   <script src="javascript/jquery.foggy.min.js"></script>
   <script src="javascript/application.js"></script>
@@ -22,24 +22,6 @@
 </head>
 
 <body>
-  <div class='menu'>
-  <ul class="navbar">
-    <li class="rightborder">
-      <div class="navitem in">
-        <%=session[:user]%>
-      </div>
-    </li>
-
-    <li class="leftborder">
-      <div class="navitem">
-        <% if @current_user %>
-          <a href="/profile">PROFILE</a>
-        <% else %>
-          <a href="/login"> LOGIN</a>
-        <% end %>
-      </div>
-      <div class="image1"></div>
-    </li>
   <%= yield %>
 </body>
 </html>
